@@ -1,1 +1,1 @@
-export const feedbacks = [];
+export const feedbacks = []

@@ -1,12 +1,12 @@
 export default async function FeedbackPage() {
-  const feedback = await getFeedback();
+  const feedback = await getFeedback()
   return (
     <div>
       <form action={submitFeedback}>
-        <input type="text" name="name" placeholder="Enter name" />
-        <input type="text" name="email" placeholder="Enter email" />
-        <input type="text" name="message" placeholder="Enter message" />
-        <button type="submit">Submit</button>
+        <input type='text' name='name' placeholder='Enter name' />
+        <input type='text' name='email' placeholder='Enter email' />
+        <input type='text' name='message' placeholder='Enter message' />
+        <button type='submit'>Submit</button>
       </form>
       <ul>
         {feedback.map((item) => (
@@ -18,5 +18,5 @@ export default async function FeedbackPage() {
         ))}
       </ul>
     </div>
-  );
+  )
 }

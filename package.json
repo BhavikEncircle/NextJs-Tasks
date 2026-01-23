@@ -1,0 +1,25 @@
+{
+  "name": "next-js",
+  "version": "1.0.0",
+  "description": "This repository contains my Next.js learning tasks using the App Router.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format":"prettier --write \"task-*/**/*.{js,jsx,ts,tsx,css,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhavikEncircle/NextJs-Tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BhavikEncircle/NextJs-Tasks/issues"
+  },
+  "homepage": "https://github.com/BhavikEncircle/NextJs-Tasks#readme",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
