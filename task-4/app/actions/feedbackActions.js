@@ -8,6 +8,6 @@ export async function addFeedback(formData) {
     email: formData.get('email'),
     message: formData.get('message'),
   }
-  revalidatePath('/')
   feedbacks.push(newFeedback)
+  revalidatePath('/feedback')
 }

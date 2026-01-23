@@ -1,6 +1,8 @@
 import { feedbacks } from '@/app/lib/feedbackStore'
-export default function FeedbackList() {
-  if (feedbacks.length === 0) {
+export default async function FeedbackList() {
+  const feedbacksList = [...feedbacks]
+
+  if (feedbacksList.length === 0) {
     return (
       <div className='text-center mt-10'>
         <p className='text-gray-500 text-sm'>No Feedbacks yet.</p>
@@ -15,7 +17,7 @@ export default function FeedbackList() {
       </div>
 
       <div className='space-y-4'>
-        {feedbacks.map((item) => (
+        {feedbacksList.map((item) => (
           <div
             key={item.id}
             className='bg-gray-800 border border-gray-700 rounded-xl p-5 shadow-sm hover:shadow-md transition'

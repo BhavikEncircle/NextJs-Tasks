@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format":"prettier --write \"task-*/**/*.{js,jsx,ts,tsx,css,md}\""
+    "format": "prettier --write \"task-*/**/*.{js,jsx,ts,tsx,css,md}\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/BhavikEncircle/NextJs-Tasks#readme",
   "devDependencies": {
     "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.18"
   }
 }
